@@ -35,5 +35,6 @@
     "tabSize": 2
   },
   "appid": "wx18113b8744a945ee",
-  "srcMiniprogramRoot": "miniprogram/"
+  "srcMiniprogramRoot": "miniprogram/",
+  "projectname": "fragrant"
 }
