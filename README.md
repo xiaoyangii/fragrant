@@ -1,16 +1,10 @@
 ## 项目介绍
 
-
-
 ### 01. 项目概述
 
-
-一款 同城鲜花订购 的小程序
-
-
+同城鲜花订购 小程序
 
 ### 02. 项目演示
-
 
 项目涵盖电商项目常见功能模块，包含：
 
@@ -25,15 +19,9 @@
 9. 订单管理
 10. 等……
 
-
-
 ### 03. 项目技术栈
 
-
-
 项目使用原生小程序进行搭建开发
-
-
 
 1. 小程序内置组件：采用小程序内置组件 结合 `Vant` 组件库实现页面结构的搭建
 
@@ -57,12 +45,8 @@
 
 11. `async-validator`：使用 [async-validator](https://github.com/yiminghe/async-validator) 实现表单验证
 
-12. `miniprogram-computed`: 使用 [miniprogram-computed](https://github.com/wechat-miniprogram/computed)  进行计算属性功能
+12. `miniprogram-computed`: 使用 [miniprogram-computed](https://github.com/wechat-miniprogram/computed) 进行计算属性功能
 
 13. `mobx-miniprogram`：使用 `mobx-miniprogram` 进行项目状态的管理
 
-    ​     
-
-
-
-
+    ​
