@@ -17,6 +17,11 @@
 
     &.small {
       margin-top: 36rpx;
+
+      .nav-img {
+        width: 50rpx !important;
+        height: 50rpx !important;
+      }
     }
 
     .navigator-nav {

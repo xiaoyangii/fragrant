@@ -1,0 +1,272 @@
+<!--
+此文件为开发者工具生成，生成时间: 2024/3/17下午4:09:40
+使用方法：
+在 E:\桌面\666\小程序项目\fragrant\miniprogram\pages\index\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 E:\桌面\666\小程序项目\fragrant\miniprogram\pages\index\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="index-container">
+      <view class="window-bgc"></view>
+      <view class="container">
+        <view is="pages/index/banner/banner">
+          <view class="banner--swiper-box">
+            <swiper
+              autoplay="false"
+              class="banner--swiper"
+              duration="1000"
+              indicator-active-color="#FF734C"
+              indicator-color="rgba(0, 0, 0, .3)"
+              interval="2000"
+              current="0"
+            >
+              <swiper-item class="banner--swiper-item swiper-item-1">
+                <navigator class="banner--navigator">
+                  <image class="banner--img sk-image"></image>
+                </navigator>
+              </swiper-item>
+              <swiper-item class="banner--swiper-item swiper-item-2">
+                <navigator class="banner--navigator">
+                  <image class="banner--img sk-image"></image>
+                </navigator>
+              </swiper-item>
+            </swiper>
+            <view class="banner--indicator">
+              <text class="banner--rectangle"></text>
+              <text class="banner--active banner--rectangle"></text>
+              <text class="banner--rectangle"></text>
+            </view>
+          </view>
+        </view>
+        <view is="pages/index/entrance/entrance">
+          <view class="entrance--nav-list">
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-12 sk-text"
+                  >爱礼精选</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-479 sk-text"
+                  >鲜花玫瑰</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-701 sk-text"
+                  >永生玫瑰</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-749 sk-text"
+                  >玫瑰珠宝</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-587 sk-text"
+                  >香水体护</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-977 sk-text"
+                  >玫瑰家居</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-896 sk-text"
+                  >开业花礼</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-432 sk-text"
+                  >生日祝福</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-437 sk-text"
+                  >一周一花</text
+                >
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text
+                  class="entrance--nav-text sk-transparent sk-text-14-2857-813 sk-text"
+                  >网红绿植</text
+                >
+              </navigator>
+            </view>
+          </view>
+        </view>
+        <view class="adver">
+          <view class="adver-left">
+            <navigator>
+              <image mode="widthFix" style="height: 228.472px" class="sk-image"></image>
+            </navigator>
+          </view>
+          <view class="adver-right">
+            <view>
+              <navigator>
+                <image mode="widthFix" style="height: 109.375px" class="sk-image"></image>
+              </navigator>
+            </view>
+            <view>
+              <navigator>
+                <image mode="widthFix" style="height: 109.375px" class="sk-image"></image>
+              </navigator>
+            </view>
+          </view>
+        </view>
+        <view is="components/goods-list/goods-list">
+          <view class="list--goods_container">
+            <view
+              class="list--goods_title sk-transparent sk-text-12-9630-712 sk-text"
+              style="background-position-x: 50%"
+              >猜你喜欢</view
+            >
+            <view class="list--goods_card_list sk-pseudo sk-pseudo-circle">
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_cart_container">
+                  <navigator class="card--navigator_nav">
+                    <image
+                      class="card--good_img sk-image"
+                      mode="widthFix"
+                      style="height: 182px"
+                    ></image>
+                    <view class="card--goods_item_info">
+                      <text
+                        class="card--goods_item_info_name sk-transparent sk-text-12-5000-739 sk-text"
+                        >全世爱-心形</text
+                      >
+                      <text
+                        class="card--goods_item_info_promo sk-transparent sk-text-14-2857-310 sk-text"
+                        >想把你宠成公主，也想给你全部温柔</text
+                      >
+                      <view class="card--goods_item_info_bottom">
+                        <view class="card--goods_item_info_price sk-transparent">
+                          <text class="card--text sk-transparent sk-opacity">¥</text>6999
+                        </view>
+                        <view
+                          class="card--goods_item_info_origin_price sk-transparent"
+                          style="text-decoration-color: transparent"
+                        >
+                          <text class="card--text sk-transparent sk-opacity">¥</text> 7999
+                        </view>
+                        <view class="card--goods_item_info_btn">
+                          <image class="card--goods_image sk-image" mode="true"></image>
+                        </view>
+                      </view>
+                    </view>
+                  </navigator>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_cart_container">
+                  <navigator class="card--navigator_nav">
+                    <image
+                      class="card--good_img sk-image"
+                      mode="widthFix"
+                      style="height: 198.501px"
+                    ></image>
+                    <view class="card--goods_item_info">
+                      <text
+                        class="card--goods_item_info_name sk-transparent sk-text-12-5000-604 sk-text"
+                        >99枝红玫瑰</text
+                      >
+                      <text
+                        class="card--goods_item_info_promo sk-transparent sk-text-14-2857-18 sk-text"
+                        >爱她，就送她一束99枝的玫瑰花！</text
+                      >
+                      <view class="card--goods_item_info_bottom">
+                        <view class="card--goods_item_info_price sk-transparent">
+                          <text class="card--text sk-transparent sk-opacity">¥</text>5088
+                        </view>
+                        <view
+                          class="card--goods_item_info_origin_price sk-transparent"
+                          style="text-decoration-color: transparent"
+                        >
+                          <text class="card--text sk-transparent sk-opacity">¥</text> 5388
+                        </view>
+                        <view class="card--goods_item_info_btn">
+                          <image class="card--goods_image sk-image" mode="true"></image>
+                        </view>
+                      </view>
+                    </view>
+                  </navigator>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_cart_container">
+                  <navigator class="card--navigator_nav">
+                    <image
+                      class="card--good_img sk-image"
+                      mode="widthFix"
+                      style="height: 198.507px"
+                    ></image>
+                  </navigator>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_cart_container">
+                  <navigator class="card--navigator_nav">
+                    <image
+                      class="card--good_img sk-image"
+                      mode="widthFix"
+                      style="height: 198.501px"
+                    ></image>
+                  </navigator>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card"></view>
+              <view is="components/goods-card/goods-card"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
