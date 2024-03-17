@@ -7,8 +7,8 @@
 
   <!-- 列表区域 -->
   <view class="goods_card_list">
-    <block wx:for="{{ 3 }}" wx:key="index">
-      <goods-card></goods-card>
+    <block wx:for="{{ list }}" wx:key="index">
+      <goods-card goodItem="{{ item }}"></goods-card>
     </block>
   </view>
 
