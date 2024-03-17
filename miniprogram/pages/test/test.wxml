@@ -1,0 +1,19 @@
+<!--pages/test/test.wxml-->
+
+<view class="box">
+  <button type="warn" plain size="mini" bindtap="allHandler">测试并发请求</button>
+</view>
+
+<view class="box">
+  <button type="warn" plain size="mini" bindtap="loadHandler">测试loading配置</button>
+</view>
+
+<view>
+  <button class="btn" open-type="chooseAvatar" bindchooseavatar="chooseavatar">
+    <image class="avatar" src="{{ avatarUrl }}" mode="" />
+  </button>
+</view>
+
+<!-- <view class="box">
+  <button type="warn" plain size="mini" bindtap="getHomeList">测试get-swiper-api</button>
+</view> -->
