@@ -1,7 +1,7 @@
 <view class="container">
   <view class="setting-list">
     <navigator
-      url="/pages/profile/profile"
+      url="/modules/settingModule/pages/profile/profile"
       hover-class="none"
       class="setting-item"
     >
@@ -12,7 +12,7 @@
   <!-- 操作列表 -->
   <view class="setting-list">
     <navigator
-      url="/pages/address/list/index"
+      url="/modules/settingModule/pages/address/list/index"
       hover-class="none"
       class="setting-item"
     >
@@ -21,12 +21,8 @@
   </view>
 
   <view class="setting-list concat">
-    <button hover-class="none" class="setting-item" open-type="feedback">
-      问题反馈
-    </button>
-    <button hover-class="none" class="setting-item" open-type="contact">
-      联系我们
-    </button>
+    <button hover-class="none" class="setting-item" open-type="feedback">问题反馈</button>
+    <button hover-class="none" class="setting-item" open-type="contact">联系我们</button>
     <button hover-class="none" class="setting-item" open-type="openSetting">
       授权信息
     </button>
