@@ -2,16 +2,12 @@
 <view class="container">
   <!-- 顶部展示图 -->
   <view class="top-show">
-    <image
-      mode="widthFix"
-      class="top-show-img"
-      src="/assets/images/banner.jpg"
-    ></image>
+    <image mode="widthFix" class="top-show-img" src="/assets/images/banner.jpg"></image>
   </view>
 
   <view class="bottom-show">
     <!-- 未登录面板 -->
-    <view class="user-container section" bindtap="toLoginPage">
+    <view class="user-container section" bindtap="toLoginPage" wx:if="{{ !token }}">
       <view class="avatar-container">
         <image src="/assets/images/avatar.png"></image>
         <view class="no-login">
@@ -22,17 +18,17 @@
     </view>
 
     <!-- 登录以后得面板 -->
-    <!-- <view class="user-container section">
+    <view class="user-container section" wx:else>
       <view class="avatar-container">
-        <image src="/assets/images/avatar.png"></image>
+        <image src="{{ userInfo.headimgurl }}"></image>
         <view class="no-login">
-          <text class="ellipsis">用户昵称</text>
+          <text class="ellipsis">{{ userInfo.nickname }}</text>
         </view>
       </view>
       <view class="setting">
         <navigator url="/pages/settings/settings"> 设置 </navigator>
       </view>
-    </view> -->
+    </view>
 
     <!-- 订单面板 -->
     <view class="order section">
@@ -43,7 +39,7 @@
 
       <view class="order-content-wrap">
         <view class="order-content-item" wx:for="{{ initpanel }}" wx:key="id">
-          <navigator url="{{ item.url }}">
+          <navigator url="{{ token ? item.url : '/pages/login/login' }}">
             <view class="iconfont {{ item.iconfont }}"></view>
             <text>{{ item.title }}</text>
           </navigator>
