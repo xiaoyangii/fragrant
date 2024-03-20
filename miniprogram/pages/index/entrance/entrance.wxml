@@ -6,7 +6,10 @@
     class="nav-item {{ index >= 5 ? 'small' : '' }}"
   >
     <!-- 导航链接 -->
-    <navigator class="navigator-nav" url="/pages/goods/list/list?category1Id={{ item.id }}">
+    <navigator
+      class="navigator-nav"
+      url="/modules/goodModule/pages/goods/list/list?category1Id={{ item.id }}"
+    >
       <image class="nav-img" src="{{ item.imageUrl }}" />
       <text class="nav-text">{{ item.name }}</text>
     </navigator>

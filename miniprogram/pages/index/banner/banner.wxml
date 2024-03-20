@@ -17,7 +17,8 @@
         <!-- 通过 navigator 组件实现页面的跳转 -->
         <navigator
           class="navigator"
-          url="/pages/goods/detail/detail?goodsId={{ item.id }}"
+          url="/modules/goodModule/pages/goods/detail/detail?goodsId={{ item.id }}"
+          hover-class="none"
         >
           <image class="img" src="{{ item.imageUrl }}"></image>
         </navigator>

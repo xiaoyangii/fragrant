@@ -1,11 +1,11 @@
 // pages/login/login.js
 
-import { toast } from '../../utils/extendApi'
-import { setStorage } from '../../utils/storage'
-import { reqLogin, reqUserInfo } from '../../api/user'
+import { toast } from '@/utils/extendApi'
+import { setStorage } from '@/utils/storage'
+import { reqLogin, reqUserInfo } from '@/api/user'
 
 import { ComponentWithStore } from 'mobx-miniprogram-bindings'
-import { userStore } from '../../stores/userstore'
+import { userStore } from '@/stores/userstore'
 
 // 导入防抖函数
 // import { debounce } from 'miniprogram-licia'

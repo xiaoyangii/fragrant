@@ -1,7 +1,7 @@
 // pages/info/info.js
 
 import { ComponentWithStore } from 'mobx-miniprogram-bindings'
-import { userStore } from '../../stores/userstore'
+import { userStore } from '@/stores/userstore'
 
 ComponentWithStore({
   // 页面的初始数据

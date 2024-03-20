@@ -1,4 +1,4 @@
-import { reqCategoryData } from '../../api/category'
+import { reqCategoryData } from '@/api/category'
 
 Page({
   data: {
