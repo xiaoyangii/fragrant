@@ -1,30 +1,38 @@
 <!--pages/address/list/index.wxml-->
 
-<view class="container address-list">
+<view class="container address-list" bindtap="onSwipeCellPage">
   <view class="list-warpper" wx:if="{{ addressList.length }}">
-    <view wx:for="{{ addressList }}" wx:key="index" class="list-item">
-      <van-swipe-cell right-width="{{ 65 }}">
+    <view wx:for="{{ addressList }}" wx:key="id" class="list-item">
+      <van-swipe-cell
+        id="swipe-cell-{{ item.id }}"
+        bind:open="swipeCellOpen"
+        bind:click="onSwipeCellClick"
+        right-width="{{ 65 }}"
+      >
         <van-cell-group border="{{ false }}">
           <view class="list-item-box">
-            <view class="info">
+            <view class="info" data-id="{{ item.id }}">
               <view class="user-info">
-                <text>测试用户</text>
-                <text>176****5678</text>
-                <text class="default-tag">默认</text>
+                <text>{{ item.name }}</text>
+                <text>{{ item.phone }}</text>
+                <text wx:if="{{ item.isDefault === 1 }}" class="default-tag">默认</text>
               </view>
 
-              <view class="address-info">
-                甘肃省甘南藏族自治州碌曲县松日鼎盛大厦0层
-              </view>
+              <view class="address-info"> {{ item.fullAddress }} </view>
             </view>
 
-            <view class="editBtn" bindtap="toEdit">
+            <view class="editBtn" bindtap="toEdit" data-id="{{ item.id }}">
               <van-icon name="edit" size="22px" color="#999" />
             </view>
           </view>
         </van-cell-group>
-        <!-- <van-icon name="delete" size="22px" color="#999" /> -->
-        <view slot="right" class="van-swipe-cell__right">
+
+        <view
+          slot="right"
+          class="van-swipe-cell__right"
+          bindtap="delAddress"
+          data-id="{{ item.id }}"
+        >
           <text>删除</text>
         </view>
       </van-swipe-cell>
