@@ -13,6 +13,7 @@
     "@vant/weapp": "^1.11.4",
     "async-validator": "^4.2.5",
     "miniprogram-computed": "^4.4.0",
+    "miniprogram-licia": "^1.39.2",
     "mobx-miniprogram": "^4.13.2",
     "mobx-miniprogram-bindings": "^2.1.5"
   }
