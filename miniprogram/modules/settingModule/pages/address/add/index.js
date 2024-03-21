@@ -1,5 +1,5 @@
 import { reqAddAddress, reqAddressInfo, reqUpdateAddress } from '../../../api/address'
-import QQMapWX from '@/libs/qqmap-wx-jssdk.min'
+import QQMapWX from '../../../libs/qqmap-wx-jssdk.min'
 import Schema from 'async-validator'
 
 Page({

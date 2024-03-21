@@ -28,5 +28,9 @@ Page({
 
   onLoad() {
     this.getIndexData()
-  }
+  },
+
+  onShareAppMessage() {},
+
+  onShareTimeline() {}
 })

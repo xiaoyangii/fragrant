@@ -11,7 +11,7 @@
       >
         <van-cell-group border="{{ false }}">
           <view class="list-item-box">
-            <view class="info" data-id="{{ item.id }}">
+            <view class="info" data-id="{{ item.id }}" bindtap="changeAddress">
               <view class="user-info">
                 <text>{{ item.name }}</text>
                 <text>{{ item.phone }}</text>

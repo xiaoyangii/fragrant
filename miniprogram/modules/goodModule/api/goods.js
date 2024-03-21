@@ -1,4 +1,4 @@
-import http from '../../../utils/http'
+import http from '@/utils/http'
 
 /**
  * @description 获取商品列表数据

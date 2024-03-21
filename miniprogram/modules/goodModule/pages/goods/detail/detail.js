@@ -72,8 +72,7 @@ Page({
       }
     } else {
       wx.navigateTo({
-        // url: `/modules/orderPayModule/pages/order/detail/detail?goodsId=${goodsId}&blessing=${blessing}`
-        url: `/pages/order/detail/detail?goodsId=${goodsId}&blessing=${blessing}`
+        url: `/modules/orderPayModule/pages/order/detail/detail?goodsId=${goodsId}&blessing=${blessing}`
       })
     }
   },
@@ -118,5 +117,9 @@ Page({
     this.getGoodsInfo()
 
     this.getCartCount()
-  }
+  },
+
+  onShareAppMessage() {},
+
+  onShareTimeline() {}
 })

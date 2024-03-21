@@ -2,11 +2,13 @@
 import { reqAddressList, reqDelAddress } from '../../../api/address'
 import { swipeCellBehavior } from '@/behaviors/swipeCell'
 
+const app = getApp()
+
 Page({
   data: {
     addressList: []
   },
-  
+
   behaviors: [swipeCellBehavior],
 
   toEdit(event) {
@@ -39,7 +41,26 @@ Page({
     this.setData({ addressList })
   },
 
+  // 更新收货地址
+  changeAddress(event) {
+    if (this.flag !== '1') return
+
+    const addressId = event.currentTarget.dataset.id
+
+    const selectAddress = this.data.addressList.find((item) => item.id === addressId)
+
+    if (selectAddress) {
+      app.globalData.address = selectAddress
+
+      wx.navigateBack()
+    }
+  },
+
   onShow() {
     this.getAddressList()
+  },
+
+  onLoad(options) {
+    this.flag = options.flag
   }
 })
